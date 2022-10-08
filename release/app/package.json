@@ -1,0 +1,16 @@
+{
+  "name": "vk-token-app",
+  "version": "1.0.0",
+  "description": "App for get VK token",
+  "author": {
+    "name": "rus_anonym",
+    "email": "alexandrsemin2033@gmail.com"
+  },
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {}
+}
